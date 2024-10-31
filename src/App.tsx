@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {TaskType, TodoList} from "./Todolist";
 
+
 function App() {
 
     // BLL - busnes logig loayr
@@ -9,6 +10,8 @@ function App() {
 
     const todoListTitle_1 = "What to lern";
     const todoListTitle_2 = "What to buy";
+
+    
     const tasks_1: Array<TaskType> = [
         {id: 1, title: "Html", IsDone: true},
         {id: 2, title: "Css", IsDone: true},
@@ -25,7 +28,7 @@ function App() {
 
 
 
-    //  - user interface
+    //  ul - user interface
 
     return (
 

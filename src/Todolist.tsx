@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from "./Button";
 
 
 type TodoListPropsType = {
@@ -34,16 +35,19 @@ export function TodoList(props: TodoListPropsType) {
             <h3>{props.title}</h3>
             <div>
                 <input/>
-                <button>+</button>
+                <Button title="+"/>
             </div>
             <ul>
                 {tasksList}
             </ul>
             <div>
-                <button>All</button>
-                <button>Active</button>
-                <button>Completed</button>
+                <Button title="All"/>
+                <Button title="Active"/>
+                <Button title="Completed"/>
             </div>
         </div>
     )
+
+
+    
 }
